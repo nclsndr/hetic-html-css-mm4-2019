@@ -7,9 +7,11 @@ revealOptions:
     transitionSpeed: 'fast'
 ---
 
+## MM4
+
 # HTML / CSS
 
-## MM4
+<a target="_blank" style="font-size: 24px; margin-top: 80px; display: block;" href="https://nclsndr.github.io/hetic-html-css-mm4-2019/#/">nclsndr.github.io/hetic-html-css-mm4-2019</a>
 
 ---
 
@@ -31,17 +33,21 @@ revealOptions:
 
 ---
 
-## Let's go?
+# Let's go?
+
+---
+
+
 
 ---
 
 <iframe
-     src="https://codesandbox.io/embed/sleepy-edison-jeq14?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="html-basis"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
+  class="codesandbox"
+  src="https://codesandbox.io/embed/sleepy-edison-jeq14?autoresize=1&fontsize=14&hidenavigation=1&theme=dark"
+  title="html-basis"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
 
 ---
 
