@@ -1,0 +1,14 @@
+{
+  "name": "html-css-slides",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "reveal-md": "^3.0.4"
+  },
+  "scripts": {
+    "build": "reveal-md slides.md --theme solarized --static docs --static-dirs=assets",
+    "start": "reveal-md slides.md --theme solarized --css overrides.css -w"
+  },
+  "keywords": [],
+  "description": ""
+}
