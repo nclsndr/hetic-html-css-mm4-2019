@@ -11,8 +11,8 @@ revealOptions:
 
 # HTML / CSS
 
-<a target="_blank" style="font-size: 24px; margin-top: 80px; display: block;" href="https://nclsndr.github.io/hetic-html-css-mm4-2019/#/">nclsndr.github.io/hetic-html-css-mm4-2019</a>
-
+Note:
+https://nclsndr.github.io/hetic-html-css-mm4-2019
 ---
 
 ## Who am I?
@@ -28,10 +28,10 @@ revealOptions:
 ## About this cycle
 
 26 nov. <br>
-[Internet](#/8) - [The Web](#/25) - [HTML](#/34) - [CSS](#/45) <br>
+[Internet](#/8) - [The Web](#/25) - [HTML](#/35) - [CSS](#/47) - [Dev tools](#/57) <br>
 03 dec. <br>
 10 dec. <br>
-Sandboxes: [Basis](#/41)
+Sandboxes: [Basis](#/43) - [HTML/CSS](#/52)
 ---
 
 <h1 style="color: #FFF;">Ready?</h1>
@@ -206,7 +206,9 @@ Berners-Lee observed how hard it was to share information amoung researches — 
   <img src="assets/web_flow.png">
 </div>
 ---
-<h1 style="color: #FFF;">But that's another story...</h1>
+### ...with HTTP and so on!?
+---
+<h2 style="color: #FFF;">Yes, but that's another story...</h2>
 <!-- .slide: data-background="assets/close_curtain.gif" -->
 ---
 
@@ -221,6 +223,8 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 <!-- .slide: data-background="assets/matrix_code.gif" -->
 
 # 👇
+
+<h2 style="color: #FFF;">cmd + alt + I</h2>
 ---
 
 ### HTML is a markup language based on XML
@@ -228,6 +232,8 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 [Extensible Markup Language (XML)](https://en.wikipedia.org/wiki/XML)
 
 ---
+### It's all about boxes containing boxes
+
 <div>
   <img src="assets/xml_example.png">
 </div>
@@ -237,9 +243,9 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 
 <div class="markup">
   <pre>&lt;</pre><span class="markup__tagname">tag</span> <br>
-  <span class="markup__attribute">attribute</span><span>="value"</span><br>
+  &nbsp;&nbsp;<span class="markup__attribute">attribute</span><span>="value"</span><br>
   <pre>&gt;</pre><br>
-  <span class="markup__content">Content?</span><br>
+  &nbsp;&nbsp;<span class="markup__content">Content?</span><br>
   <pre>&lt;/</pre><span class="markup__tagname">tag</span><pre>&gt;</pre><br>
 </div>
 
@@ -261,7 +267,22 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 <nav>Containing navigation items</nav>
 ...
 ```
+---
+### HTML5 minimal page
 
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Titre</title>
+    </head>
+
+    <body>
+    
+    </body>
+</html>
+```
 ---
 <iframe
   class="codesandbox"
@@ -270,6 +291,9 @@ Berners-Lee observed how hard it was to share information amoung researches — 
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
+
+Note:
+Build basic information display of article (Title, p, image)
 ---
 # ✋
 ### Ok, but all this looks pretty ugly right?
@@ -287,20 +311,95 @@ To
 
 # HTML ❤️ CSS
 
+```html
+<link href="styles/style.css" rel="stylesheet">
+```
 ---
 
 ## CSS
+
+[Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ```css
 p {
   color: red;
 }
+.title {
+  font-style: 2rem;
+}
 ```
-
-[Cascading Style Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
 ---
 
+### Selectors
+
+```html
+<body>
+    <p class="someClass">
+        <span id="someIdentifier">Foo</span>
+    </p>
+    <p class="someClass">Bar</p>
+</body>
+```
+
+```css
+/* HTML tags: tag selector */
+body { margin: 0 }
+
+/* HTML class attribute: class selector */
+.someClass { color: blue; }
+
+/* HTML id attribute: id selector */
+#someIdentifier { font-size: 8rem; }
+```
+---
+
+### Properties
+
+```css
+p {
+  display: block;
+  color: #000;
+  font-family: "Helvetica", "Arial", sans-serif;
+  border: none;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  /* ... */
+}
+```
+
+[CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+---
+### Pseudo-selectors
+
+```html
+<a class="someLink" href="/any">Some link</a>
+```
+
+```css
+.someLink { color: white; }
+.someLink:hover { color: black; }
+.someLink:active { color: blue; }
+.someLink:visited { color: blue; }
+```
+
+[Pseudo-class docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+---
+
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/html-css-basis-ee5d0?fontsize=14&hidenavigation=1&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="html-css-basis"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+
+Note:
+Flux Display /Inheritance / selector depth
+---
+## Think in boxes 👉
 ---
 <div>
   <img src="assets/fb5.jpg">
@@ -315,7 +414,76 @@ p {
 </div>
 ---
 
-## Ressources
+# 🛠
+## Some dev tools to continue
+
+---
+<div>
+  <img style="width: 150px;" src="assets/vscode_logo.png">
+</div>
+
+## VS Code
+
+Simple code editor
+
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+---
+<div>
+  <img style="width: 250px;" src="assets/nodejs_logo.png">
+</div>
+
+## NodeJS
+
+Javascript runner
+
+[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+---
+<div>
+  <img style="width: 260px;" src="https://www.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb800.png">
+</div>
+
+## Terminal
+
+```bash
+$ node -v
+$ npm -v
+```
+---
+<div>
+  <img style="width: 150px;" src="assets/code_sandbox_logo.png">
+</div>
+
+## Code Sandbox
+
+Collaborative online editor
+
+[https://codesandbox.io/](https://codesandbox.io/)
+
+---
+
+# ⚠️
+## TODO: Missing repo to clone
+
+---
+
+# 👷
+## Let's code
+
+---
+<div>
+  <img src="assets/basic_profile.png">
+</div>
+---
+
+# Resources
+
+---
+
+### Dev tools
+
+[caniuse.com](https://caniuse.com)
 
 ---
 
