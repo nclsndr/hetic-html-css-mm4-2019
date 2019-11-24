@@ -6,7 +6,7 @@
     "reveal-md": "^3.0.4"
   },
   "scripts": {
-    "build": "reveal-md slides.md --theme solarized --static docs --static-dirs=assets",
+    "build": "reveal-md slides.md --theme solarized --css overrides.css --static docs --static-dirs=assets",
     "start": "reveal-md slides.md --theme solarized --css overrides.css -w"
   },
   "keywords": [],

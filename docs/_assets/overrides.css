@@ -1,0 +1,74 @@
+iframe.codesandbox, iframe.figma {
+  width:100%;
+  height:600px;
+  border:0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 1px 8px rgba(0,0,0,.16), 0px 3px 24px rgba(0,0,0,.12);
+}
+
+.reveal pre {
+  border-radius: 5px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,.25);
+}
+
+.reveal section img {
+  border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15)
+}
+
+.reveal pre code {
+  padding: 30px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+.reveal code {
+  font-weight: bold;
+}
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+.reveal section img:hover {
+  box-shadow: none;
+}
+.reveal blockquote {
+  border: none;
+  box-shadow: none;
+  text-align: left;
+  border-left: 4px solid rgba(101, 123, 131, .3);
+  padding-left: 8%;
+  width: 80%;
+}
+.reveal .source_link {
+  font-size: 1.5rem;
+}
+
+code.large {
+  font-size: 3rem;
+}
+
+div.markup {
+  margin-top: 5vh;
+  text-align: left;
+  font-family: 'Hack', 'Courier', 'Mono';
+}
+div.markup pre {
+  display: inline;
+  box-shadow: none;
+}
+div.markup pre, div.markup span {
+  font-size: 4rem;
+}
+.markup__tagname {
+  color: rgb(7, 133, 184)
+}
+.markup__attribute {
+  color: rgb(184, 137, 7)
+}
+.markup__content {
+  color: rgb(4, 160, 74)
+}
