@@ -27,11 +27,12 @@ https://nclsndr.github.io/hetic-html-css-mm4-2019
 
 ## About this cycle
 
-26 nov. <br>
-[Internet](#/8) - [The Web](#/25) - [HTML](#/35) - [CSS](#/47) - [Dev tools](#/57) <br>
-03 dec. <br>
-10 dec. <br>
-Sandboxes: [Basis](#/43) - [HTML/CSS](#/52)
+#### 26 nov.
+History, HTML/CSS basis, UI design, Let's code
+#### 03 dec.
+Responsive integration, CSS displays
+#### 10 dec.
+Web builders, CSS transitions & animations
 ---
 
 <h1 style="color: #FFF;">Ready?</h1>
@@ -48,9 +49,9 @@ Sandboxes: [Basis](#/43) - [HTML/CSS](#/52)
 
 ### Some valid definition 
 
-by [Mozilla docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
-
 __HTML__ (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. [...]
+
+by [Mozilla docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ---
 
@@ -126,7 +127,7 @@ https://en.wikibooks.org/wiki/The_Computer_Revolution/Networks/Internet
   <img src="assets/rfc1.png">
 </div>
 
-Applying scientific method for a collaborative definition of protocols
+Applying scientific method for a collaborative definition of world wide standards
 
 ---
 <div>
@@ -145,7 +146,12 @@ Applying scientific method for a collaborative definition of protocols
   <img src="assets/arpanet73.jpg">
 </div>
 
-1973 - [source: vox.com](https://www.vox.com/a/internet-maps)
+1973 - 
+
+<a href="https://www.vox.com/a/internet-maps" class="source_link" target="_blank" >
+source: vox.com
+</a>
+
 ---
 <!-- .slide: data-background="assets/twitter_wake_up.gif" -->
 ---
@@ -187,44 +193,103 @@ English engineer and computer scientist — CERN researcher
 
 ## 🧑‍🔬 ✉️ 📡 📞 📬 🧑‍🔬 🤯
 
-Berners-Lee observed how hard it was to share information amoung researches — Especially linking articles
+Berners-Lee observed how hard it was to share information among researchers — Especially pointing publications related to common topics
 
 ---
-## His solution?
----
-<code class="large">
-  HyperText Markup Language
-</code>
 
+<div>
+  <img style="height:40vh" src="assets/t3_network.jpg">
+</div>
+
+In 1991, the network was growing, expanding possibilities
+
+<a class="source_link" target="_blank"
+href="https://en.wikipedia.org/wiki/National_Science_Foundation_Network">
+National Science Foundation Network
+</a>
+<a class="source_link" target="_blank"
+href="https://www.computerhistory.org/internethistory/1990s/">
+Internet History of 1990s
+</a>
+
+---
+<!-- .slide: data-background="assets/internet_1993.gif" -->
+---
+
+World wide messaging was existing
+
+<div>
+  <img src="assets/usenet_web.svg">
+</div>
+
+<a class="source_link" target="_blank"
+href="https://en.wikipedia.org/wiki/Usenet">
+Usenet since 1980
+</a>
+
+---
+## But 
+---
+## Silo effect
+
+Communication over interconnected networks was hard and not human friendly — No central place where knowledge could be shared.
+---
+## Berners-Lee's vision?
+---
+# 🕸
+---
 <div>
   <img src="assets/HyperText.png">
 </div>
 ---
-### Ok, but IRL it looks more like 👉
+## The web — a suite of tools
 ---
+### HTTP
 <div>
-  <img src="assets/web_flow.png">
+  <img style="height:auto;" src="assets/client_server.png">
+</div>
+<a class="source_link" target="_blank"
+href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">
+HTTP Wikipedia
+</a>
+---
+### DNS
+
+www.google.com
+
+<div>
+  <img style="height:40vh;" src="assets/domain_name_space.svg">
+</div>
+<a class="source_link" target="_blank"
+href="https://en.wikipedia.org/wiki/Domain_Name_System">
+DNS wikipedia
+</a>
+---
+### Browsers
+<div>
+  <img style="height:40vh;" src="assets/browsers.png">
 </div>
 ---
-### ...with HTTP and so on!?
----
-<h2 style="color: #FFF;">Yes, but that's another story...</h2>
-<!-- .slide: data-background="assets/close_curtain.gif" -->
+<code class="large">
+  HTML / CSS / JS
+</code>
+
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+HTML MDN
+</a>
 ---
 
 # HTML
 
-## The web building block
+## The web building blocks
 ---
-<div>
-  <img src="assets/simple_html_page.png">
-</div>
----
+
 <!-- .slide: data-background="assets/matrix_code.gif" -->
 
 # 👇
 
-<h2 style="color: #FFF;">cmd + alt + I</h2>
+<h2 style="color: #FFF;">cmd/ctrl + alt + I</h2>
 ---
 
 ### HTML is a markup language based on XML
@@ -239,7 +304,7 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 </div>
 ---
 
-### HTML Element
+### HTML Element Structure
 
 <div class="markup">
   <pre>&lt;</pre><span class="markup__tagname">tag</span> <br>
@@ -251,7 +316,7 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 
 ---
 
-### Common HTML tags
+### Common HTML elements
 
 ```html
 <html>Document root</html>
@@ -267,6 +332,39 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 <nav>Containing navigation items</nav>
 ...
 ```
+
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+HTML Elements - MDN
+</a>
+
+---
+### Elements display
+<div>
+  <img style="height:40vh;" src="assets/html_display.png">
+</div>
+---
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/html-displays-m99h3?fontsize=14&hidenavigation=1&theme=dark"
+  title="html-basis"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+---
+### HTML 1, 2, 3, 4, 5...
+
+#### Doctype
+
+```html
+HTML 5
+<!DOCTYPE html>
+
+HTML 4.01
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+```
+
 ---
 ### HTML5 minimal page
 
@@ -279,10 +377,12 @@ Berners-Lee observed how hard it was to share information amoung researches — 
     </head>
 
     <body>
-    
     </body>
 </html>
 ```
+---
+## 👷
+### Let's type some code
 ---
 <iframe
   class="codesandbox"
@@ -295,17 +395,20 @@ Berners-Lee observed how hard it was to share information amoung researches — 
 Note:
 Build basic information display of article (Title, p, image)
 ---
+## How to dive into the docs?
+[Mozilla Developer Network (MDN) — HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+---
 # ✋
 ### Ok, but all this looks pretty ugly right?
 ---
 How to get from
 <div>
-  <img src="assets/hetic_no_css.png">
+  <img src="assets/mdn_no_css.png">
 </div>
 ---
 To
 <div>
-  <img src="assets/hetic_css.png">
+  <img src="assets/mdn_css.png">
 </div>
 ---
 
@@ -390,7 +493,6 @@ p {
 <iframe
   class="codesandbox"
   src="https://codesandbox.io/embed/html-css-basis-ee5d0?fontsize=14&hidenavigation=1&theme=dark"
-  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
   title="html-css-basis"
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
@@ -414,8 +516,35 @@ Flux Display /Inheritance / selector depth
 </div>
 ---
 
+# 🎨
+## Design to code
+
+---
+<div>
+  <img src="assets/exercise_profile_desktop.jpg">
+</div>
+---
+<div>
+  <img src="assets/figma_grid.png">
+</div>
+---
+<iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+---
+<iframe
+  class="codesandbox"
+  src="https://codesandbox.io/embed/hetic-mm4-profile-exercise-nxkc7?fontsize=14&hidenavigation=1&theme=dark"
+  title="hetic-mm4-profile-exercise"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+---
+
+# Resources
+
+---
+
 # 🛠
-## Some dev tools to continue
+## Dev tools
 
 ---
 <div>
@@ -462,26 +591,11 @@ Collaborative online editor
 [https://codesandbox.io/](https://codesandbox.io/)
 
 ---
-
-# ⚠️
-## TODO: Missing repo to clone
-
----
-
-# 👷
-## Let's code
-
----
 <div>
-  <img src="assets/basic_profile.png">
+  <img style="width: 500px;" src="assets/can_i_use.png">
 </div>
----
 
-# Resources
-
----
-
-### Dev tools
+### Can I use?
 
 [caniuse.com](https://caniuse.com)
 

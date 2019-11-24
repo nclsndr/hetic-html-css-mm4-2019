@@ -1,4 +1,4 @@
-iframe.codesandbox {
+iframe.codesandbox, iframe.figma {
   width:100%;
   height:600px;
   border:0;
@@ -42,6 +42,9 @@ iframe.codesandbox {
   border-left: 4px solid rgba(101, 123, 131, .3);
   padding-left: 8%;
   width: 80%;
+}
+.reveal .source_link {
+  font-size: 1.5rem;
 }
 
 code.large {
