@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
     <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
-    <link rel="stylesheet" href="./css/overrides.css" />
+    <link rel="stylesheet" href="./_assets/overrides.css" />
 
   </head>
   <body>
@@ -24,7 +24,9 @@
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Who am I?
 
-- [Nicolas André](https://twitter.com/nclsndr) — UX Engineer at <a target="_blank" href="https://www.chance.co">Chance</a>
+[Nicolas André](https://twitter.com/nclsndr) <br>
+UX Engineer at <a target="_blank" href="https://www.chance.co">Chance</a><br>
+HETIC Expert graduate
 </script></section><section  data-markdown><script type="text/template">
 # And you?
 </script></section><section  data-markdown><script type="text/template">
@@ -33,9 +35,30 @@
 #### 26 nov.
 History, HTML/CSS basis, UI design, Let's code
 #### 03 dec.
-Responsive integration, CSS displays
+CSS displays, Forms, Code for devices
 #### 10 dec.
 Web builders, CSS transitions & animations</script></section><section  data-markdown><script type="text/template">
+## A bit of tooling
+</script></section><section  data-markdown><script type="text/template">
+<div>
+  <img style="width: 150px;" src="assets/code_sandbox_logo.png">
+</div>
+
+## Code Sandbox
+
+Signup with Github
+
+[https://codesandbox.io/](https://codesandbox.io/)
+</script></section><section  data-markdown><script type="text/template"><div>
+  <img style="width: 150px;" src="assets/vscode_logo.png">
+</div>
+
+## VS Code
+
+Simple code editor
+
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+</script></section><section  data-markdown><script type="text/template">
 <h1 style="color: #FFF;">Ready?</h1>
 
 <!-- .slide: data-background="assets/ready.gif" -->
@@ -272,6 +295,11 @@ HTML 4.01
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 ```
+
+<a class="source_link" target="_blank"
+href="https://en.wikipedia.org/wiki/HTML#HTML_versions_timeline">
+HTML Versions
+</a>
 </script></section><section  data-markdown><script type="text/template">### HTML5 minimal page
 
 ```html
@@ -318,7 +346,7 @@ p {
   color: red;
 }
 .title {
-  font-style: 2rem;
+  font-size: 2rem;
 }
 ```</script></section><section  data-markdown><script type="text/template">
 ### Selectors
@@ -358,7 +386,22 @@ p {
 }
 ```
 
-[CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)</script></section><section  data-markdown><script type="text/template">### Pseudo-selectors
+[CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)</script></section><section  data-markdown><script type="text/template">
+### Layout flow
+
+```css
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+```
+
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout">
+Layout Flow docs
+</a>
+</script></section><section  data-markdown><script type="text/template">
+### Pseudo-selectors
 
 ```html
 <a class="someLink" href="/any">Some link</a>
@@ -371,7 +414,11 @@ p {
 .someLink:visited { color: blue; }
 ```
 
-[Pseudo-class docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)</script></section><section  data-markdown><script type="text/template">
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+Pseudo-classes docs
+</a>
+</script></section><section  data-markdown><script type="text/template">
 <iframe
   class="codesandbox"
   src="https://codesandbox.io/embed/html-css-basis-ee5d0?fontsize=14&hidenavigation=1&theme=dark"
@@ -381,27 +428,49 @@ p {
 ></iframe>
 
 <aside class="notes"><p>Flux Display /Inheritance / selector depth</p>
-</aside></script></section><section  data-markdown><script type="text/template">## Think in boxes 👉</script></section><section  data-markdown><script type="text/template"><div>
+</aside></script></section><section  data-markdown><script type="text/template"># 🎨 🔮
+## Design to code</script></section><section  data-markdown><script type="text/template">#### Thinking in boxes 👇
+
+<div>
   <img src="assets/fb5.jpg">
 </div></script></section><section  data-markdown><script type="text/template"><div>
   <img src="assets/fb5_1.jpg">
 </div></script></section><section  data-markdown><script type="text/template"><div>
   <img src="assets/fb5_2.jpg">
-</div></script></section><section  data-markdown><script type="text/template">
-# 🎨
-## Design to code
+</div>
 </script></section><section  data-markdown><script type="text/template"><div>
   <img src="assets/exercise_profile_desktop.jpg">
-</div></script></section><section  data-markdown><script type="text/template"><div>
-  <img src="assets/figma_grid.png">
-</div></script></section><section  data-markdown><script type="text/template"><iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D0%253A1" allowfullscreen></iframe></script></section><section  data-markdown><script type="text/template"><iframe
+</div></script></section><section  data-markdown><script type="text/template"><iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+</script></section><section  data-markdown><script type="text/template">
+### TODO
+
+- 🖼 Layout
+- 🏞 Images
+- 🔠 Fonts
+- 📏 Spacing
+- 💅 Fine tune
+</script></section><section  data-markdown><script type="text/template">
+<iframe
   class="codesandbox"
   src="https://codesandbox.io/embed/hetic-mm4-profile-exercise-nxkc7?fontsize=14&hidenavigation=1&theme=dark"
   title="hetic-mm4-profile-exercise"
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-></iframe></script></section><section  data-markdown><script type="text/template">
-# Resources
+></iframe>
+</script></section><section  data-markdown><script type="text/template">
+# 📱🖥
+## Responsive interfaces
+</script></section><section  data-markdown><script type="text/template"><div>
+  <img src="assets/responsive_grids.png">
+</div></script></section><section  data-markdown><script type="text/template">
+<iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D86%253A4" allowfullscreen></iframe>
+</script></section><section  data-markdown><script type="text/template">
+# ⌨️ 🖥
+## Managing forms
+</script></section><section  data-markdown><script type="text/template">
+# 🔍👁
+## Accessibility
+</script></section><section  data-markdown><script type="text/template"># Resources
 </script></section><section  data-markdown><script type="text/template">
 # 🛠
 ## Dev tools

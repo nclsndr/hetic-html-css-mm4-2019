@@ -17,7 +17,9 @@ https://nclsndr.github.io/hetic-html-css-mm4-2019
 
 ## Who am I?
 
-- [Nicolas André](https://twitter.com/nclsndr) — UX Engineer at <a target="_blank" href="https://www.chance.co">Chance</a>
+[Nicolas André](https://twitter.com/nclsndr) <br>
+UX Engineer at <a target="_blank" href="https://www.chance.co">Chance</a><br>
+HETIC Expert graduate
 
 ---
 
@@ -30,9 +32,36 @@ https://nclsndr.github.io/hetic-html-css-mm4-2019
 #### 26 nov.
 History, HTML/CSS basis, UI design, Let's code
 #### 03 dec.
-Responsive integration, CSS displays
+CSS displays, Forms, Code for devices
 #### 10 dec.
 Web builders, CSS transitions & animations
+---
+
+## A bit of tooling
+
+---
+
+<div>
+  <img style="width: 150px;" src="assets/code_sandbox_logo.png">
+</div>
+
+## Code Sandbox
+
+Signup with Github
+
+[https://codesandbox.io/](https://codesandbox.io/)
+
+---
+<div>
+  <img style="width: 150px;" src="assets/vscode_logo.png">
+</div>
+
+## VS Code
+
+Simple code editor
+
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
 ---
 
 <h1 style="color: #FFF;">Ready?</h1>
@@ -365,6 +394,11 @@ HTML 4.01
 "http://www.w3.org/TR/html4/strict.dtd">
 ```
 
+<a class="source_link" target="_blank"
+href="https://en.wikipedia.org/wiki/HTML#HTML_versions_timeline">
+HTML Versions
+</a>
+
 ---
 ### HTML5 minimal page
 
@@ -428,7 +462,7 @@ p {
   color: red;
 }
 .title {
-  font-style: 2rem;
+  font-size: 2rem;
 }
 ```
 ---
@@ -474,6 +508,23 @@ p {
 
 [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 ---
+
+### Layout flow
+
+```css
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+```
+
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout">
+Layout Flow docs
+</a>
+
+---
+
 ### Pseudo-selectors
 
 ```html
@@ -487,7 +538,11 @@ p {
 .someLink:visited { color: blue; }
 ```
 
-[Pseudo-class docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+Pseudo-classes docs
+</a>
+
 ---
 
 <iframe
@@ -500,9 +555,13 @@ p {
 
 Note:
 Flux Display /Inheritance / selector depth
+
 ---
-## Think in boxes 👉
+# 🎨 🔮
+## Design to code
 ---
+#### Thinking in boxes 👇
+
 <div>
   <img src="assets/fb5.jpg">
 </div>
@@ -514,22 +573,26 @@ Flux Display /Inheritance / selector depth
 <div>
   <img src="assets/fb5_2.jpg">
 </div>
----
-
-# 🎨
-## Design to code
 
 ---
 <div>
   <img src="assets/exercise_profile_desktop.jpg">
 </div>
 ---
-<div>
-  <img src="assets/figma_grid.png">
-</div>
----
 <iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+
 ---
+
+### TODO
+
+- 🖼 Layout
+- 🏞 Images
+- 🔠 Fonts
+- 📏 Spacing
+- 💅 Fine tune
+
+---
+
 <iframe
   class="codesandbox"
   src="https://codesandbox.io/embed/hetic-mm4-profile-exercise-nxkc7?fontsize=14&hidenavigation=1&theme=dark"
@@ -537,8 +600,31 @@ Flux Display /Inheritance / selector depth
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
+
 ---
 
+# 📱🖥
+## Responsive interfaces
+
+---
+<div>
+  <img src="assets/responsive_grids.png">
+</div>
+---
+
+<iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D86%253A4" allowfullscreen></iframe>
+
+---
+
+# ⌨️ 🖥
+## Managing forms
+
+---
+
+# 🔍👁
+## Accessibility
+
+---
 # Resources
 
 ---
