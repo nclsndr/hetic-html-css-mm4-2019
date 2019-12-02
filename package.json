@@ -6,8 +6,8 @@
     "reveal-md": "^3.0.4"
   },
   "scripts": {
-    "build": "reveal-md slides.md --theme solarized --highlight-theme github --css custom.css --static docs --static-dirs=assets",
-    "start": "reveal-md slides.md --theme solarized --highlight-theme github --css custom.css -w"
+    "build": "reveal-md --theme solarized slides.md --static docs --static-dirs=assets",
+    "start": "reveal-md --theme solarized slides.md -w"
   },
   "keywords": [],
   "description": ""
