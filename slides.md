@@ -557,6 +557,110 @@ Note:
 Flux Display /Inheritance / selector depth
 
 ---
+
+### The box model
+
+<div>
+  <img src="assets/the_box_model.png">
+</div>
+
+<a class="source_link" target="_blank"
+href="https://css-tricks.com/the-css-box-model/">
+The box model - CSS Tricks
+</a>
+
+---
+
+### The common padding + width issue
+
+<div>
+  <img src="assets/css_box_padding_issue.png">
+</div>
+
+<a class="source_link" target="_blank"
+href="https://css-tricks.com/the-css-box-model/#article-header-id-1">
+The Default Width of Block Level Boxes - CSS Tricks
+</a>
+
+
+---
+### Solution: Box sizing
+
+```css
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+```
+
+<a class="source_link" target="_blank"
+href="https://css-tricks.com/the-css-box-model/#article-header-id-1">
+Best box-sizing Reset Methods - CSS Tricks
+</a>
+
+---
+
+<iframe
+     src="https://codesandbox.io/embed/gifted-roentgen-eexyw?fontsize=14&hidenavigation=1&theme=dark"
+     class="codesandbox"
+     title="hetic-mm4-box-sizing"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+<a class="source_link" target="_blank"
+href="https://css-tricks.com/the-css-box-model/">
+The box model - CSS Tricks
+</a>
+
+---
+
+### Background images
+
+```css
+  background-image:url('cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+```
+
+<a class="source_link" target="_blank"
+href="https://css-tricks.com/almanac/properties/b/background-image/">
+background-image - CSS Tricks
+</a>
+
+---
+
+### CSS custom properties
+#### variables
+
+```css
+:root {
+  --pimary-default: #192EEE;
+  --content-black: #21243B;
+  --content-dark: #535465;
+}
+```
+
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">
+Using CSS custom properties - MDN
+</a>
+
+---
+
+## ⚠️ (2019)
+
+<div>
+  <img src="assets/caniuse_css_variables.png">
+</div>
+
+<a class="source_link" target="_blank"
+href="https://caniuse.com/#feat=css-variables">
+https://caniuse.com/#feat=css-variables - CanIUse
+</a>
+
+---
+
 # 🎨 🔮
 ## Design to code
 ---
@@ -573,7 +677,6 @@ Flux Display /Inheritance / selector depth
 <div>
   <img src="assets/fb5_2.jpg">
 </div>
-
 ---
 <div>
   <img src="assets/exercise_profile_desktop.jpg">
@@ -602,9 +705,53 @@ Flux Display /Inheritance / selector depth
 ></iframe>
 
 ---
+### CSS Reset
+
+```css
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+```
+
+<a class="source_link" target="_blank"
+href="http://meyerweb.com/eric/tools/css/reset/">
+Eric Meyer's reset
+</a>
+
+---
 
 # 📱🖥
 ## Responsive interfaces
+
+---
+
+#### on modern devices
+
+## A pixel is not a pixel
+
+---
+
+### Browser viewport
+
+```html
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1"
+>
+```
+
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">
+Using the viewport meta tag to control layout on mobile browsers - MDN
+</a>
 
 ---
 <div>
@@ -612,12 +759,130 @@ Flux Display /Inheritance / selector depth
 </div>
 ---
 
+## 📱 > 🖥
+### Think mobile first
+
+---
+
+### CSS Media queries
+
+```css
+@media screen and (min-width: 1280px) {
+  /* some style */
+}
+```
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">
+ @media - MDN
+</a>
+
+---
+
+### Mobile first @media-queries
+
+```css
+/* Mobile */
+/* Tablet */ @media screen and (min-width: 768px) {}
+/* Desktop */ @media screen and (min-width: 1160px) {}
+/* Large Desktop */ @media screen and (min-width: 1400px) {}
+```
+
+---
+<a class="source_link" target="_blank"
+href="https://minicss.org/">
+ Mini CSS Docs
+</a>
+
+<!-- .slide: data-background="assets/minicss.png" -->
+---
+
+### CDN resource
+
+```html
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"
+>
+```
+---
+### CSS Grid
+
+<div>
+  <img src="assets/minicss_grid_system.png">
+</div>
+
+<a class="source_link" target="_blank"
+href="https://minicss.org/docs#grid">
+ Grid system - Mini CSS
+</a>
+---
+
 <iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D86%253A4" allowfullscreen></iframe>
+
+---
+
+<iframe
+     src="https://codesandbox.io/embed/hetic-mm4-responsive-profile-exercise-fnw1v?fontsize=14&hidenavigation=1&theme=dark"
+     class="codesandbox"
+     title="hetic-mm4-responsive-profile-exercise"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
 ---
 
 # ⌨️ 🖥
 ## Managing forms
+
+---
+
+### HTML Basis
+
+```html
+<form class="formContainer" action="" method="POST">
+  <input name="name" type="text" />
+  <input name="email" type="email" required />
+  <textarea name="message" cols="30" rows="10"></textarea>
+  <input type="submit" value="Send" />
+</form>
+```
+<a class="source_link" target="_blank"
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">
+ Form Element - MDN
+</a>
+
+---
+### Input CSS
+
+```html
+<input name="firstName" type="text" />
+```
+
+```css
+input:focus { border: 1px solid blue; }
+input::placeholder { color: #EEE; }
+```
+
+---
+
+### Tip
+
+```html
+  <label for="emailInput">Email</label> 
+  <input id="emailInput" name="email" type="email" />
+```
+
+`emailInput` is used both for `input.id` and `label.for` making possible to `:focus` the input by clicking the label
+
+---
+
+<iframe
+  src="https://codesandbox.io/embed/hetic-mm4-html-form-elements-3tgem?fontsize=14&hidenavigation=1&theme=dark"
+  class="codesandbox"
+  title="hetic-mm4-html-form-elements"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
 
 ---
 
