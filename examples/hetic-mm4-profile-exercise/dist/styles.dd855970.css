@@ -121,7 +121,7 @@ a {
   left: 0;
   width: 100%;
   height: 40vh;
-  background-image:url('cover.jpg');
+  background-image:url('/cover.651c47ed.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 36%;
@@ -184,3 +184,5 @@ a {
 .experienceGroup__info {
   margin-left: 16px;
 }
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
