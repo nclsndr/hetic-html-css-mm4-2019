@@ -21,6 +21,8 @@ https://nclsndr.github.io/hetic-html-css-mm4-2019
 UX Engineer at <a target="_blank" href="https://www.chance.co">Chance</a><br>
 HETIC Expert graduate
 
+questions? > [twitter.com/nclsndr](https://twitter.com/nclsndr)
+
 ---
 
 # And you?
@@ -838,7 +840,8 @@ href="https://minicss.org/">
 ```html
 <link
 rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"
+href="https://cdnjs.cloudflare.com/ajax/libs
+      /mini.css/3.0.1/mini-default.min.css"
 >
 ```
 ---
@@ -852,6 +855,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css
 href="https://minicss.org/docs#grid">
  Grid system - Mini CSS
 </a>
+---
+
+<iframe
+  src="https://codesandbox.io/embed/eager-chebyshev-qb2t8?fontsize=14&hidenavigation=1&theme=dark"
+  class="codesandbox"
+  title="hetic-MM4-mini-css-framework"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+
 ---
 
 <iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FimpVe29Fh49HCzcxiyGNVJ%2FHETIC-MM4-2019-HTML-CSS%3Fnode-id%3D86%253A4" allowfullscreen></iframe>
@@ -921,13 +934,25 @@ input::placeholder { color: #EEE; }
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
 ></iframe>
 
+
 ---
-
-# 🔍👁
-## Accessibility
-
+## CSS Animations
+---
+<iframe
+     src="https://codesandbox.io/embed/romantic-currying-u6cbv?fontsize=14&hidenavigation=1&theme=dark"
+     class="codesandbox"
+     title="hetic-mm4-css-animations"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 ---
 # Resources
+
+---
+
+## Slides
+
+[nclsndr.github.io/hetic-html-css-mm4-2019](https://nclsndr.github.io/hetic-html-css-mm4-2019/#/)
 
 ---
 
@@ -992,3 +1017,8 @@ Collaborative online editor
 ## That's all folks
 
 Thank you
+
+<a class="source_link" target="_blank"
+href="https://nclsndr.github.io/hetic-html-css-mm4-2019/#/">
+ nclsndr.github.io/hetic-html-css-mm4-2019
+</a>
